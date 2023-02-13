@@ -46,6 +46,8 @@ myDiv2.appendChild(myH2);
 myDiv2.appendChild(myP);
 
 
+
+
 // opgave 3 liveHTML lists
 /* opgave 3.1
 Du skal finde alle elementer med klassen purpleFigures og console logge resultatet
@@ -57,7 +59,6 @@ console.log(document.getElementsByClassName('purpleFigures'));
 
 
 
-
 /* opgave 3.2
 Du skal finde alle elementer med klassen purpleFigures og bruge array.from() til at konvertere listen
 til et array hvor du kan bruge map funktionen til at ændre baggrundsfarven til rød.
@@ -66,7 +67,7 @@ array.from beskrivelse HER: https://developer.mozilla.org/en-US/docs/Web/JavaScr
 
 // din kode her
 
-// console.log(Array.from(document.getElementsByClassName('purpleFigures')));
+
 
 
 
@@ -79,6 +80,7 @@ myElement.children[0].innerHTML til at ændre 1. child elements inner html.
 
 
 // din kode her
+
 
 
 
