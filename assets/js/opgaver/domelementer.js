@@ -8,7 +8,9 @@ Du skal finde elementet med id="yellowFigure" og console logge det.
 */
 
 // din kode her
+console.log(document.getElementById('redFigure'));
 
+console.log(document.getElementById('yellowFigure'));
 
 /* opgave 1.2
 Du skal ændre baggrundsfarve på de to elementer du har fundet i opgave 1.1
@@ -17,7 +19,9 @@ farven på elementerne skal være blå. brug evt. elelement.style.backgroundColo
 
 
 // din kode her
+document.getElementById('redFigure').style.backgroundColor = "black";
 
+document.getElementById('yellowFigure').style.backgroundColor = "black";
 
 
 /* opgave 2.1
@@ -28,6 +32,18 @@ Du skal oprette følgende HTML elementer i Elementet med id opgaveTwo.
 
 
 // din kode her
+const myDiv2 = document.getElementById('opgaveTwo');
+
+let myH2 = document.createElement('h2');
+myH2.innerText = "Opgave 2.1 løsning"
+
+
+let myP = document.createElement('p');
+myP.innerText = "Jeg har løst opgave 2.1"
+
+
+myDiv2.appendChild(myH2);
+myDiv2.appendChild(myP);
 
 
 // opgave 3 liveHTML lists
@@ -37,6 +53,10 @@ Du skal finde alle elementer med klassen purpleFigures og console logge resultat
 
 // din kode her
 
+console.log(document.getElementsByClassName('purpleFigures'));
+
+
+
 
 /* opgave 3.2
 Du skal finde alle elementer med klassen purpleFigures og bruge array.from() til at konvertere listen
@@ -45,6 +65,11 @@ array.from beskrivelse HER: https://developer.mozilla.org/en-US/docs/Web/JavaScr
 */
 
 // din kode her
+
+// console.log(Array.from(document.getElementsByClassName('purpleFigures')));
+
+
+
 
 
 /* opgave 3.3
@@ -69,8 +94,35 @@ const myData = {
 };
 
 
-// din kode her
+// din kode her 
+
+// Find dom element til mit card
+const myCardElement = document.getElementById('opgaveFour');
+
+// console.log(myCardElement);
 
 
+let myArticle = document.createElement('article');
+myArticle.classList.add('gallerycard');
 
 
+let myHeadline = document.createElement('h2');
+myHeadline.innerText = myData.name;
+
+
+let myImage = document.createElement('img');
+myImage.src = myData.image;
+myImage.alt = myData.name;
+
+
+let myDesc = document.createElement('p');
+myDesc.innerHTML = myData.description;
+
+
+myCardElement.appendChild(myArticle);
+myCardElement.appendChild(myHeadline);
+myCardElement.appendChild(myImage);
+myCardElement.appendChild(myDesc);
+
+
+// console.log(myCardElement);
