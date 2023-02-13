@@ -59,6 +59,7 @@ console.log(document.getElementsByClassName('purpleFigures'));
 
 
 
+
 /* opgave 3.2
 Du skal finde alle elementer med klassen purpleFigures og bruge array.from() til at konvertere listen
 til et array hvor du kan bruge map funktionen til at ændre baggrundsfarven til rød.
@@ -105,7 +106,7 @@ const myCardElement = document.getElementById('opgaveFour');
 
 
 let myArticle = document.createElement('article');
-myArticle.classList.add('gallerycard');
+myCardElement.classList.add('gallerycard');
 
 
 let myHeadline = document.createElement('h2');
